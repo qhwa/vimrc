@@ -4,7 +4,14 @@ endfun
 set runtimepath=~/.vim_runtime,~/.vim_runtime/after,\$VIMRUNTIME
 source ~/.vim_runtime/vimrc
 "helptags ~/.vim_runtime/doc
-set guifont=Lucida\ Sans\ Typewriter\ Regular:h13
+
+" Lucida Sans Typewriter
+"set guifont=Lucida\ Sans\ Typewriter\ Regular:h13
+
+" Fira Code
+set guifont=Fira\ Code:h15
+set macligatures
+
 if has("gui_running")
   set guioptions-=T
   set t_Co=256
