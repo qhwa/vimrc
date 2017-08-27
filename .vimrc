@@ -10,12 +10,12 @@ source ~/.vim_runtime/vimrc
 
 " Fira Code
 set guifont=Fira\ Code:h15
-set macligatures
 
 if has("gui_running")
   set guioptions-=T
   set t_Co=256
   set background=light
+  set macligatures
   colorscheme tutticolori
 else
   colorscheme colorful
