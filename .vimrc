@@ -74,6 +74,9 @@ vnoremap <silent> cu :call RangeUnCommentLine()<CR>
 
 " key-mapping for CtrlSF plugin
 nnoremap <silent> <leader>f :CtrlSF<CR>
+
+" key-mapping for FZF plugin
+nnoremap <silent> <leader><space> :FZF<CR>
 nmap <silent> <leader>d <Plug>DashSearch
 
 au FileType ruby nnoremap <buffer> <leader>r :!ruby "%"<CR>
@@ -181,10 +184,16 @@ Bundle "honza/vim-snippets"
 
 Bundle 'vim-scripts/Emmet.vim'
 Bundle 'vim-scripts/WebAPI.vim'
-Bundle 'elixir-lang/vim-elixir'
 Bundle 'posva/vim-vue'
 Bundle 'nathanielc/vim-tickscript'
 Bundle 'sjl/gundo.vim'
+
+"Elixir and Phoenix
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'tpope/vim-projectionist'
+Bundle 'tpope/vim-surround'
+Bundle 'c-brenn/phoenix.vim'
+Bundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 let g:vim_markdown_folding_disabled = 1
 let g:jsx_ext_required = 0
